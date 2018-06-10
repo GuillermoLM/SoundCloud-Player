@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="assets/vendors/bootstrap/dist/css/bootstrap.min.css"></link>
+    <link rel="stylesheet" type="text/css" href="assets/css/app.css"></link>
+    <title>Reproductor de Música</title>
+</head>
+<body>
+    <header>
+        <div class="row justify-content-center">
+            <h1>REPRODUCTOR MUSICAL CON STREAMCLOUD</h1>     
+        </div>
+    </header>
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-9">
+                <input type="text" class="form-control" placeholder="Buscar grupo"></input>
+            </div>
+            <div clas="col-3">
+                <button onclick="busqueda()" type="button" class="btn btn-default">Buscar</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-5">
+                <div ondrop="onDrop(event)" ondragover="onDragOver(event)" id="container">
+
+                </div>
+            </div>
+            <div class="col-3">
+                <div id="container_canciones">
+                    <div class="lista">
+                    
+                    </div>
+                </div>
+            </div>
+            <div class="col-2"></div>
+        </div>
+    </div>
+
+    <script src="https://connect.soundcloud.com/sdk/sdk-3.3.0.js"></script>
+    <script src="assets/vendors/jquery/dist/jquery.min.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

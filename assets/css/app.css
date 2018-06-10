@@ -1,0 +1,23 @@
+h1{
+    margin:20px;
+}
+
+#container{
+    margin: 50px;
+    height: 400px;
+    width: 400px;
+    background-color: red;
+}
+
+#container_canciones{
+    margin: 50px;
+    min-height: 200px;
+    min-width: 317px;
+    border: solid black;
+}
+
+.img_bus{
+    margin: 2px;
+    max-width: 100%;
+    max-height: 100%;
+}
